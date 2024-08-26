@@ -1,0 +1,1173 @@
+let simon
+!function() {
+    try {
+        var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {}
+          , a = (new Error).stack;
+        a && (e._sentryDebugIds = e._sentryDebugIds || {},
+        e._sentryDebugIds[a] = "b74439e2-d97a-4c7b-acd9-5c70406d2c90",
+        e._sentryDebugIdIdentifier = "sentry-dbid-b74439e2-d97a-4c7b-acd9-5c70406d2c90")
+    } catch (e) {}
+}();
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+    id: "pc-v5.64.2"
+},
+(()=>{
+    "use strict";
+    var e, a, c, d, b, f, o = {}, t = {};
+    function r(e) {
+        if (t[e])
+            return t[e].exports;
+        var a = t[e] = {
+            id: e,
+            loaded: !1,
+            exports: {}
+        };
+        return o[e].call(a.exports, a, a.exports, r),
+        a.loaded = !0,
+        a.exports
+    }
+    r.m = o,
+    r.x = e=>{}
+    ,
+    r.microfeA = (e,a)=>{
+        e.exports;
+        var c, d, b = e.exports = new Promise(((e,a)=>{
+            c = e,
+            d = a
+        }
+        ));
+        a().then((()=>{
+            if (e.exports.then) {
+                var a = e.exports;
+                e.exports = b,
+                a.then(c, d)
+            } else
+                c(e.exports)
+        }
+        )).catch(d)
+    }
+    ,
+    (()=>{
+        var e = {
+            0: {
+                version: "2.2.0",
+                bundler: "webpack"
+            },
+            1: {
+                version: "0.5.0"
+            },
+            2: {
+                version: "2.2.0",
+                bundler: "webpack"
+            },
+            3: {
+                version: "4.0.2"
+            },
+            4: {
+                version: "1.0.0",
+                bundler: "webpack"
+            },
+            5: {
+                version: "2.3.1"
+            }
+        }
+          , a = {
+            0: "shopee__settings",
+            1: "shopee__domain",
+            2: "shopee__language",
+            3: "shopee_common__currency",
+            4: "shopee__cart-prefetch-singleton",
+            5: "shopee_common__time"
+        }
+          , c = {
+            type: "module",
+            requester: "pcmall-static"
+        };
+        if (r.microfeM = d=>Platform.getModule(a[d], Object.assign({}, c, e[d])),
+        r.microfeI = d=>Platform.getModuleImmediate(a[d], Object.assign({}, c, e[d])),
+        window && window.__DECKER_HOOK__) {
+            var d = window.__DECKER_HOOK__
+              , b = ()=>{
+                d.sendToDevtools("MFE_FEDERATED_MODULES_INFO", {
+                    base: c,
+                    map: e,
+                    name: a
+                })
+            }
+            ;
+            d.on("MFE_RETRIEVE_FEDERATED_MODULES_INFO", b),
+            b()
+        }
+    }
+    )(),
+    r.amdD = function() {
+        throw new Error("define cannot be used indirect")
+    }
+    ,
+    r.amdO = {},
+    r.n = e=>{
+        var a = e && e.__esModule ? ()=>e.default : ()=>e;
+        return r.d(a, {
+            a
+        }),
+        a
+    }
+    ,
+    a = Object.getPrototypeOf ? e=>Object.getPrototypeOf(e) : e=>e.__proto__,
+    r.t = function(c, d) {
+        if (1 & d && (c = this(c)),
+        8 & d)
+            return c;
+        if ("object" == typeof c && c) {
+            if (4 & d && c.__esModule)
+                return c;
+            if (16 & d && "function" == typeof c.then)
+                return c
+        }
+        var b = Object.create(null);
+        r.r(b);
+        var f = {};
+        e = e || [null, a({}), a([]), a(a)];
+        for (var o = 2 & d && c; "object" == typeof o && !~e.indexOf(o); o = a(o))
+            Object.getOwnPropertyNames(o).forEach((e=>f[e] = ()=>c[e]));
+        return f.default = ()=>c,
+        r.d(b, f),
+        b
+    }
+    ,
+    r.d = (e,a)=>{
+        for (var c in a)
+            r.o(a, c) && !r.o(e, c) && Object.defineProperty(e, c, {
+                enumerable: !0,
+                get: a[c]
+            })
+    }
+    ,
+    r.f = {},
+    r.e = e=>Promise.all(Object.keys(r.f).reduce(((a,c)=>(r.f[c](e, a),
+    a)), [])),
+    r.u = e=>(({
+        1: "sap-hook",
+        23: "EReceiptForm68",
+        91: "address.TH_address_to_zip-live-json",
+        182: "ShopeeMart",
+        197: "EReceiptForm96",
+        215: "EReceiptForm37",
+        293: "PageDownloadApp",
+        369: "PageShareExpiration",
+        394: "EReceiptForm98",
+        456: "PageItemRatingsOld",
+        462: "PageFlashSale",
+        473: "RouteRedirectToMyAccountPayment",
+        561: "PageVerifyPassword",
+        566: "PageVerifyEmail",
+        569: "InformationBlockES",
+        601: "ShopeeFoodPaymentSelectionPage",
+        639: "InstallmentFilter",
+        642: "BannerSDKPlayground",
+        684: "PageRatings",
+        773: "EReceiptForm63",
+        919: "EReceiptForm177",
+        975: "InformationBlockPL",
+        986: "InformationBlockBR",
+        1028: "EReceiptForm90",
+        1036: "EReceiptForm164",
+        1086: "ResetPasswordByEmail",
+        1110: "EReceiptForm29",
+        1136: "SignupByOTP",
+        1160: "EReceiptForm149",
+        1179: "InformationBlockVN",
+        1200: "PageOAuth",
+        1235: "EReceiptForm14",
+        1242: "InformationBlockID",
+        1286: "PFBCookieSetter",
+        1303: "EReceiptForm60",
+        1331: "PageRedirectToFlashSaleSMart",
+        1337: "PCSummaryNotificationContainer",
+        1430: "PaymentSelectionPage",
+        1466: "PageVerifyLinkReceiver",
+        1473: "EReceiptForm157",
+        1531: "EReceiptForm74",
+        1575: "RedirectRwBrowseDeal",
+        1584: "EReceiptForm163",
+        1615: "RouteRedirectForSBrowser",
+        1714: "UserPage",
+        1918: "EReceiptForm173",
+        1951: "EReceiptForm1",
+        1968: "PageDPPaymentSelection",
+        1981: "ResetPassword",
+        2009: "EReceiptForm103",
+        2063: "PageAuthenticationIVS",
+        2142: "LoginByPassword",
+        2161: "PageAddressSelectionDemo",
+        2162: "address.TW-live-json",
+        2412: "PageBranchReselection",
+        2629: "EReceiptForm33",
+        2718: "EReceiptForm5",
+        2793: "EReceiptForm44",
+        2810: "address.ID-live-json",
+        2845: "PageIdentityVerification",
+        2854: "RedirectToCoinsHistory",
+        2964: "EReceiptForm171",
+        2968: "PageCheckoutOld",
+        2975: "hash",
+        3046: "InformationBlockCL",
+        3053: "address.MX-live-json",
+        3121: "PageSVSPaymentSelection",
+        3187: "PageUserGDPRCookieSettings",
+        3269: "EReceiptForm27",
+        3283: "EReceiptForm153",
+        3445: "EReceiptForm155",
+        3507: "PageUserAddress",
+        3543: "EReceiptForm170",
+        3573: "EReceiptForm19",
+        3621: "PageKYCFreeShipping",
+        3665: "EReceiptForm95",
+        3707: "EReceiptForm166",
+        3754: "PageGenericDownloadApp",
+        3758: "PageUserPassword",
+        3785: "InformationBlockTH",
+        3917: "CoinExpirationPage",
+        3976: "AccountDemoPage",
+        4001: "OrderDetailPage",
+        4006: "InformationBlockFR",
+        4031: "SearchResultVoucher",
+        4044: "address.TH_address_to_zip-en-live-json",
+        4075: "EReceiptForm26",
+        4106: "AccountAddPassword",
+        4166: "EReceiptForm107",
+        4200: "EReceiptForm158",
+        4255: "PageVerifyQr",
+        4325: "MyAccountPage",
+        4343: "PageAuthenticationShopeePay",
+        4344: "PageLINEIntegration",
+        4376: "PageAllCategories",
+        4406: "address.PH-live-json",
+        4518: "DebugInformation",
+        4557: "PageIntegrationAddressCallback",
+        4571: "PageUserGDPR",
+        4615: "PageWelcomePackage",
+        4643: "EReceiptForm85",
+        4702: "RouteRedirectToHome",
+        4794: "AccountChangePhoneNumber",
+        4812: "address.CL-live-json",
+        4859: "ShopeeMartAddOnDealsPage",
+        4864: "EReceiptForm3",
+        4994: "EReceiptForm47",
+        5144: "LoginByWhatsappToken",
+        5174: "SocialBindAccount",
+        5189: "EReceiptForm75",
+        5216: "address.ID_address_to_zip-live-json",
+        5264: "CollectionPointAddressModal",
+        5279: "EReceiptForm20",
+        5322: "LoginByOTP",
+        5345: "EReceiptForm77",
+        5366: "PageAccountRedirect",
+        5375: "AccountChangePassword",
+        5461: "EReceiptForm8",
+        5479: "ComponentBuilderPlayground",
+        5483: "InformationBlockPH",
+        5500: "ProductLabelLanding",
+        5703: "address.TH-en-live-json",
+        5823: "PCLazyFooter",
+        5833: "EReceiptForm67",
+        5847: "address.TW_address_to_zip-live-json",
+        5873: "address.TH-live-json",
+        5897: "PageIframeDataPipe",
+        5959: "InformationBlockSG",
+        6061: "PageVerifyOTP",
+        6081: "InformationBlockAR",
+        6082: "address.CO-live-json",
+        6109: "EReceiptForm51",
+        6147: "EReceiptForm45",
+        6184: "ShopeePlayPaymentSelectionPage",
+        6201: "EReceiptForm80",
+        6207: "WidgetGallery",
+        6222: "EventPage",
+        6326: "LogisticAddressModal",
+        6368: "EReceiptForm82",
+        6485: "AccountChangePhoneNumberV2",
+        6539: "LogisticsSelectionModal",
+        6547: "AccountAddPhoneNumberV2",
+        6743: "LoginByQRCode",
+        6756: "address.VN-live-json",
+        6776: "InformationBlockIN",
+        6791: "EReceiptForm40",
+        6862: "EReceiptForm59",
+        6922: "PageReportUser",
+        6929: "VLibrasIntegration",
+        6931: "EReceiptForm79",
+        6980: "EReceiptForm34",
+        6983: "EReceiptForm87",
+        7026: "MarketplacePaymentPage",
+        7116: "EReceiptForm57",
+        7119: "shopee-phonelib",
+        7171: "PageVerifyEmailLinkSender",
+        7173: "EReceiptForm22",
+        7372: "ProductTagFilter",
+        7412: "EReceiptForm102",
+        7464: "HotWordList",
+        7537: "PageAddressDemo",
+        7565: "WebTrackerBridge",
+        7598: "PageIntegrationTWEInvoice",
+        7761: "PageBrandSale",
+        7776: "PageVerifyLinkSender",
+        7793: "CookieConsentBannerV2",
+        7839: "InformationBlockMY",
+        7905: "EReceiptForm88",
+        7917: "EReceiptForm62",
+        7925: "address.TW_zip_to_address-live-json",
+        7978: "EReceiptForm91",
+        8009: "PageAntiCrawlerTest",
+        8026: "EReceiptForm36",
+        8122: "address.BR-live-json",
+        8204: "EReceiptForm160",
+        8225: "FooterInfoBlockPreview",
+        8257: "InformationBlockTW",
+        8341: "EReceiptForm161",
+        8505: "EReceiptForm70",
+        8534: "PageVerifyEmailLinkReceiver",
+        8616: "InformationBlockMX",
+        8623: "InformationBlockCO",
+        8637: "PageUserEmail",
+        8681: "EReceiptForm12",
+        8696: "ShopSearchPage",
+        8713: "PageLKPPSSO",
+        8729: "PageGDPRCookieGuestSetting",
+        8731: "EReceiptForm31",
+        8798: "PageFlashSaleSMart",
+        8850: "EReceiptForm54",
+        8912: "EReceiptForm15",
+        8953: "ProgramForm",
+        8958: "EReceiptForm9",
+        8970: "EReceiptForm11",
+        9020: "SignupKyc",
+        9090: "PageUserPayment",
+        9196: "address.SG-live-json",
+        9211: "EReceiptForm52",
+        9276: "PageNotification",
+        9358: "AccountAddPhoneNumber",
+        9393: "PageUserPhone",
+        9607: "EReceiptForm6",
+        9611: "PageDevtool",
+        9754: "EReceiptForm56",
+        9802: "address.MY-live-json",
+        9905: "AccessibilityDemoPage",
+        9924: "PageCustomKYCTW",
+        9936: "EReceiptForm83"
+    }[e] || e) + "." + {
+        1: "9075557ef2b5ba47",
+        23: "07a42755607befa2",
+        34: "e76e48a6e3a64886",
+        91: "0927d66889e654f4",
+        102: "62f37c3c02469fb6",
+        182: "852f4c1dac48763b",
+        197: "9122a00ee451df7a",
+        215: "87eeacabc242a717",
+        293: "cfb192a1b77369ae",
+        369: "8acd2f3e55bc7152",
+        394: "1db201c4a5715460",
+        445: "9d6719d7626f8238",
+        456: "e04578094f32ae8c",
+        462: "0dd7c95caa4b13cf",
+        473: "3f21024104986e62",
+        561: "081250e6240794bc",
+        566: "02c0f496d0793010",
+        569: "f0e5f88acb6da91d",
+        601: "a5db365d78b6dcee",
+        639: "87a47aaab3cddc41",
+        642: "1c82be97c4dfd018",
+        668: "da24acaf47446d65",
+        684: "cbea116372c69e63",
+        773: "55e1d56c0b84bf8a",
+        883: "0883c171671bee76",
+        919: "92ba43b0f200f3ea",
+        954: "158456f50526d49e",
+        975: "4b747a611b5a6006",
+        986: "e441c25941ae46e7",
+        1028: "13c83c0a1022a456",
+        1036: "75fb315f725e14a1",
+        1086: "ea9494b95ef7c6c3",
+        1110: "dae96790e3ddc7fd",
+        1136: "03b50d6ca8a7331e",
+        1160: "e578bd1a890c1a5a",
+        1179: "f10e7871f3b2e509",
+        1200: "a49b345d18474556",
+        1230: "9063e0da187b212c",
+        1235: "bb604059069b86f5",
+        1242: "acbdb26a9da8b8ab",
+        1286: "781092ce08a46b3b",
+        1303: "26d15e6e432ed83a",
+        1323: "0c9013ec6e8baa7c",
+        1331: "70de244a2f165de3",
+        1337: "2053376c96f5547b",
+        1359: "278c114fa674554a",
+        1415: "72c8e8b49aa6ac44",
+        1430: "8976928133979483",
+        1466: "c70e5ffba45e4245",
+        1473: "acfb27c77412bae9",
+        1482: "c439954861cefafd",
+        1531: "97bd06fc80227b84",
+        1575: "e5fbfda3a798b44e",
+        1584: "1eb3db4fff902152",
+        1615: "6073555d96431e4f",
+        1714: "c522690efe06862d",
+        1774: "eb9468ec16b693d3",
+        1918: "a68cae11278494e1",
+        1951: "d037ddcdc1401a4f",
+        1968: "77d4156fbd558dc1",
+        1981: "ec8458f847aa88b0",
+        2005: "120bd3e98c43290e",
+        2009: "db0ccdde1debb3dd",
+        2053: "3aa414a62a527491",
+        2063: "c1238ea37ab2f555",
+        2073: "f09f33e0929ca07c",
+        2142: "bea4438b9b353b23",
+        2161: "012a3f612930d17a",
+        2162: "fe9f2e04ea6fab17",
+        2201: "aaff3a55d4dc6e88",
+        2203: "5f998a46515809ac",
+        2279: "75f0d157d001abb5",
+        2370: "ada7afedc28c3e34",
+        2387: "1743e6e1b7e43439",
+        2412: "ae32330821cf7d09",
+        2503: "abb01c5265acf7d2",
+        2552: "947f485607f7cb6a",
+        2556: "10a2dc590df98c26",
+        2571: "c76ee083f83dcecb",
+        2629: "60c380396f07c2f7",
+        2638: "b7a892b109644d73",
+        2718: "15af658f5753af8b",
+        2719: "20f225d60ef96e6b",
+        2793: "3ec43427e89526fd",
+        2810: "badf5730896092c5",
+        2845: "fc9e75420604ce7f",
+        2854: "fd092ba34bf1b5e5",
+        2964: "d6bb916c22b25807",
+        2968: "85740caf7e523215",
+        2975: "6a37a4bdd153509f",
+        3046: "a458eac30d5b8607",
+        3053: "c72c5ab7538eb9e0",
+        3121: "69042a5d14d7774e",
+        3181: "3ff9807dd2cbd107",
+        3187: "3c1a3c4415220f8c",
+        3269: "33b06fc1bdfe7216",
+        3283: "95feb9579fe00b72",
+        3331: "efa1b952eeaf8ed8",
+        3388: "7b3a82178123524f",
+        3445: "0b12ef8afc8d4e64",
+        3474: "35e0cb9ebaed437d",
+        3507: "0998167bcbb6bf0f",
+        3543: "229bedc4aa5baf67",
+        3573: "8804d38b6d215fc0",
+        3621: "059bf47931b98068",
+        3665: "56c54634de52b5a7",
+        3707: "ae70d9eed82cbe2b",
+        3754: "90957328131b32f2",
+        3758: "c74560993dd5a26d",
+        3785: "7874e2fd81528173",
+        3917: "931614cf2fceccd8",
+        3976: "b7f987751991f5e2",
+        4001: "551608ac5a8d66ee",
+        4006: "7269e1c97897ea2a",
+        4031: "9c1dc19c4bd275ca",
+        4044: "247afb3280f5e3da",
+        4075: "e874782cbd919001",
+        4106: "3936ab60e9482b20",
+        4166: "c26406f4302ba226",
+        4200: "c1ee701c494f4176",
+        4255: "a6178138762d9747",
+        4325: "66fd7e6e236c4dce",
+        4343: "3c41a40ba435e3c6",
+        4344: "736fa93b7807680e",
+        4376: "ae6373986e450d76",
+        4396: "a42451009d24c764",
+        4406: "aa0675bd1b70b877",
+        4464: "7797a7003f0ab252",
+        4518: "0bcb62dcfc727266",
+        4557: "7dd5e9f76008f451",
+        4571: "6063b0fc33034dd7",
+        4615: "6f960b0c9a48c42b",
+        4643: "9a7b912c0691287a",
+        4702: "bd077675f65c04fc",
+        4794: "08483c5ac2aa23ad",
+        4812: "0376cf2c5cf68867",
+        4859: "04ad8e94aa5e4d4a",
+        4864: "7fdd0d85a11e25e3",
+        4881: "8f4541725d4139a5",
+        4994: "27817d23181ece5e",
+        5028: "4caca41542dbb397",
+        5144: "b171defcdb00836c",
+        5174: "7373c08c7b06c7ba",
+        5189: "58f5711bff0b0b97",
+        5196: "ade539932b9b61a8",
+        5216: "b5a26f129a019070",
+        5240: "688faa6818a56d7f",
+        5264: "dcdbe549e0d2dae7",
+        5279: "6ae85fd1174189d0",
+        5281: "ca7b8490b7510355",
+        5322: "e1d9094ed6c08703",
+        5345: "9ac851ac52b93a64",
+        5366: "990c1a34df610785",
+        5375: "3aa878bcedf35705",
+        5461: "203471168c79a081",
+        5479: "3415215c1fd3621c",
+        5483: "90844cb09290a328",
+        5500: "3ba835417f83cf9f",
+        5675: "be721940470740d8",
+        5703: "6f25fbf6e77e431c",
+        5786: "533b0a0b9f7273c1",
+        5814: "de206ef2d9254b6c",
+        5823: "1471b159fdbab39d",
+        5833: "e54e6734bc7e461e",
+        5847: "5b2b4b0808bc14ad",
+        5858: "fdde98d0e4f5fc4d",
+        5873: "dd2767ebf4bf1666",
+        5897: "0d5849d2e353ea4f",
+        5959: "3e962c2541911bb4",
+        5972: "9bfdbd8eecf532e3",
+        6061: "1889cc7ba44d76d1",
+        6081: "2619050f31c36944",
+        6082: "b2c2ad6e70289339",
+        6109: "2e2051cb76afc679",
+        6147: "3c94c8d623c634c8",
+        6176: "944f7b349bf76312",
+        6184: "ed24456c0a00e49a",
+        6201: "d3647e082f3fe4b1",
+        6207: "07f16e9630ec5990",
+        6222: "b2d7e39dff039c2c",
+        6326: "333b381d9f02acc8",
+        6368: "883eaa0663d6c859",
+        6444: "0bcdc3210346e5c9",
+        6485: "3a25a4a3c77cafd6",
+        6505: "d182a1f8e86af878",
+        6509: "b688355ca6238503",
+        6539: "ddd9725fc9132715",
+        6547: "92378c578fceda6c",
+        6678: "a40a349340287e14",
+        6713: "175cb753ef3126d7",
+        6743: "f7b363422a47654e",
+        6756: "67929256884f2a64",
+        6776: "58ea9bcb346c95f0",
+        6791: "0dd02afdc8b97e64",
+        6862: "3b9e34c3bb396c34",
+        6922: "ef571e3e5467807a",
+        6929: "a11c0705caeb3a5d",
+        6931: "54e5c8fb3aa5fa66",
+        6980: "df6070d4b34c5a7c",
+        6983: "221282183cfadb98",
+        7010: "3f296efade45c21e",
+        7026: "e60d86a950359347",
+        7116: "04447a0a9208055e",
+        7119: "9a6a260907b650ea",
+        7171: "8024586cba57dca3",
+        7173: "613f08b143beb14a",
+        7372: "0022e92252731c03",
+        7412: "4509275884378e41",
+        7464: "801ac6d42eb2b3fe",
+        7467: "b2c5549975d566d3",
+        7537: "a854a6fbd2dba2fc",
+        7565: "f3c2dd87f815bd09",
+        7598: "75537a9a35af711f",
+        7599: "cdb6e0e5244003af",
+        7761: "271c08d10883c527",
+        7776: "2296fcaa40edb274",
+        7786: "c846f6b0e9392266",
+        7793: "2fbe9af196d73263",
+        7839: "cf3bd44e0f4b4c31",
+        7905: "aa81d00dd2abb508",
+        7917: "e2ade142b5c5bf84",
+        7925: "215ffde5ae6dcf57",
+        7978: "98adf7787b6ab448",
+        8009: "252610a70383f752",
+        8026: "b62b1a4e0389656f",
+        8122: "238ffe091466dbba",
+        8187: "3bd1aee5f3c4f101",
+        8204: "b9a91109f8284f16",
+        8225: "69510b88d951ebd8",
+        8257: "def5cb0d68b84276",
+        8269: "41a3f83544c16150",
+        8341: "bd066563864e67e9",
+        8370: "0d4690fe27c0258e",
+        8505: "0b7e20ca2f4b9946",
+        8534: "84131df90c7ffb6f",
+        8616: "a81da1c0a9be7d9c",
+        8623: "38b3b99b92567b2f",
+        8637: "4d9e8825da9648a3",
+        8681: "5b43ae1155f1bdf0",
+        8696: "09b740c016259cc9",
+        8713: "e5935e9706124e29",
+        8729: "2a1688953a0a3bc4",
+        8731: "2280cee47d1c8830",
+        8764: "9e13e1725b2be14f",
+        8785: "8da1258cce6b73d2",
+        8798: "be144e99dcb16ac7",
+        8850: "bf0946282b87e860",
+        8912: "9e62c4d2f15b4d9c",
+        8931: "6a347ab51e68bc31",
+        8953: "23ea15f74aaa39ec",
+        8958: "060b554559d67b5d",
+        8970: "07386796e4c210aa",
+        9020: "fa6a1ca4e1127db7",
+        9090: "a7f408b471bde1ee",
+        9142: "0f2a926c65fadee3",
+        9159: "7e919621f6fb7b50",
+        9196: "b79c69c5f2bf7950",
+        9199: "d40850adff21b256",
+        9211: "d340ff8bacf8522d",
+        9276: "be422c21fb3d4da9",
+        9358: "6ad2dcc2b3537864",
+        9393: "3521d8cdd85ea095",
+        9607: "aa009cb23d283bd6",
+        9611: "3df9d88560e95cba",
+        9754: "a332ed5018b6e279",
+        9802: "5673b27e4909706c",
+        9905: "db6be9b6f221a982",
+        9924: "a3341503ebb3d06d",
+        9933: "25a4730c843a2353",
+        9936: "e2359f368d04cda1"
+    }[e] + ".js"),
+    r.miniCssF = e=>8357 === e ? "8357.b38b00cc524f5ff4.css" : 4296 === e ? "bundle.227c6e3c1bdc6350.css" : e + "." + {
+        215: "87eeacabc242a717",
+        293: "cfb192a1b77369ae",
+        369: "8acd2f3e55bc7152",
+        561: "081250e6240794bc",
+        566: "02c0f496d0793010",
+        569: "f0e5f88acb6da91d",
+        601: "a5db365d78b6dcee",
+        642: "1c82be97c4dfd018",
+        684: "cbea116372c69e63",
+        773: "55e1d56c0b84bf8a",
+        919: "92ba43b0f200f3ea",
+        975: "4b747a611b5a6006",
+        986: "e441c25941ae46e7",
+        1028: "13c83c0a1022a456",
+        1036: "75fb315f725e14a1",
+        1086: "ea9494b95ef7c6c3",
+        1110: "dae96790e3ddc7fd",
+        1136: "03b50d6ca8a7331e",
+        1179: "f10e7871f3b2e509",
+        1200: "a49b345d18474556",
+        1235: "bb604059069b86f5",
+        1242: "acbdb26a9da8b8ab",
+        1303: "26d15e6e432ed83a",
+        1337: "2053376c96f5547b",
+        1466: "c70e5ffba45e4245",
+        1473: "acfb27c77412bae9",
+        1531: "97bd06fc80227b84",
+        1584: "1eb3db4fff902152",
+        1714: "c522690efe06862d",
+        1951: "d037ddcdc1401a4f",
+        1968: "77d4156fbd558dc1",
+        1981: "ec8458f847aa88b0",
+        2009: "db0ccdde1debb3dd",
+        2063: "c1238ea37ab2f555",
+        2142: "bea4438b9b353b23",
+        2161: "012a3f612930d17a",
+        2279: "75f0d157d001abb5",
+        2412: "ae32330821cf7d09",
+        2552: "947f485607f7cb6a",
+        2629: "60c380396f07c2f7",
+        2718: "15af658f5753af8b",
+        2793: "3ec43427e89526fd",
+        2845: "fc9e75420604ce7f",
+        2968: "85740caf7e523215",
+        3046: "a458eac30d5b8607",
+        3121: "69042a5d14d7774e",
+        3187: "3c1a3c4415220f8c",
+        3269: "33b06fc1bdfe7216",
+        3283: "95feb9579fe00b72",
+        3445: "0b12ef8afc8d4e64",
+        3507: "0998167bcbb6bf0f",
+        3543: "229bedc4aa5baf67",
+        3573: "8804d38b6d215fc0",
+        3621: "059bf47931b98068",
+        3665: "56c54634de52b5a7",
+        3707: "ae70d9eed82cbe2b",
+        3754: "90957328131b32f2",
+        3758: "c74560993dd5a26d",
+        3785: "7874e2fd81528173",
+        3976: "b7f987751991f5e2",
+        4006: "7269e1c97897ea2a",
+        4075: "e874782cbd919001",
+        4106: "3936ab60e9482b20",
+        4166: "c26406f4302ba226",
+        4200: "c1ee701c494f4176",
+        4255: "a6178138762d9747",
+        4325: "66fd7e6e236c4dce",
+        4343: "3c41a40ba435e3c6",
+        4344: "736fa93b7807680e",
+        4376: "ae6373986e450d76",
+        4464: "7797a7003f0ab252",
+        4518: "0bcb62dcfc727266",
+        4557: "7dd5e9f76008f451",
+        4571: "6063b0fc33034dd7",
+        4615: "6f960b0c9a48c42b",
+        4643: "9a7b912c0691287a",
+        4794: "08483c5ac2aa23ad",
+        4864: "7fdd0d85a11e25e3",
+        5174: "7373c08c7b06c7ba",
+        5189: "58f5711bff0b0b97",
+        5264: "dcdbe549e0d2dae7",
+        5281: "ca7b8490b7510355",
+        5322: "e1d9094ed6c08703",
+        5345: "9ac851ac52b93a64",
+        5375: "3aa878bcedf35705",
+        5461: "203471168c79a081",
+        5479: "3415215c1fd3621c",
+        5483: "90844cb09290a328",
+        5500: "3ba835417f83cf9f",
+        5823: "1471b159fdbab39d",
+        5833: "e54e6734bc7e461e",
+        5858: "fdde98d0e4f5fc4d",
+        5959: "3e962c2541911bb4",
+        5972: "9bfdbd8eecf532e3",
+        6061: "1889cc7ba44d76d1",
+        6081: "2619050f31c36944",
+        6109: "2e2051cb76afc679",
+        6184: "ed24456c0a00e49a",
+        6201: "d3647e082f3fe4b1",
+        6207: "07f16e9630ec5990",
+        6222: "b2d7e39dff039c2c",
+        6326: "333b381d9f02acc8",
+        6368: "883eaa0663d6c859",
+        6485: "3a25a4a3c77cafd6",
+        6539: "ddd9725fc9132715",
+        6547: "92378c578fceda6c",
+        6743: "f7b363422a47654e",
+        6776: "58ea9bcb346c95f0",
+        6791: "0dd02afdc8b97e64",
+        6862: "3b9e34c3bb396c34",
+        6922: "ef571e3e5467807a",
+        6929: "a11c0705caeb3a5d",
+        6931: "54e5c8fb3aa5fa66",
+        6980: "df6070d4b34c5a7c",
+        6983: "221282183cfadb98",
+        7026: "e60d86a950359347",
+        7116: "04447a0a9208055e",
+        7171: "8024586cba57dca3",
+        7412: "4509275884378e41",
+        7464: "801ac6d42eb2b3fe",
+        7537: "a854a6fbd2dba2fc",
+        7598: "75537a9a35af711f",
+        7599: "cdb6e0e5244003af",
+        7776: "2296fcaa40edb274",
+        7793: "2fbe9af196d73263",
+        7839: "cf3bd44e0f4b4c31",
+        7905: "aa81d00dd2abb508",
+        7917: "e2ade142b5c5bf84",
+        7978: "98adf7787b6ab448",
+        8009: "252610a70383f752",
+        8026: "b62b1a4e0389656f",
+        8187: "3bd1aee5f3c4f101",
+        8204: "b9a91109f8284f16",
+        8257: "def5cb0d68b84276",
+        8341: "bd066563864e67e9",
+        8534: "84131df90c7ffb6f",
+        8616: "a81da1c0a9be7d9c",
+        8623: "38b3b99b92567b2f",
+        8637: "4d9e8825da9648a3",
+        8681: "5b43ae1155f1bdf0",
+        8696: "09b740c016259cc9",
+        8713: "e5935e9706124e29",
+        8729: "2a1688953a0a3bc4",
+        8731: "2280cee47d1c8830",
+        8798: "be144e99dcb16ac7",
+        8850: "bf0946282b87e860",
+        8912: "9e62c4d2f15b4d9c",
+        8958: "060b554559d67b5d",
+        8970: "07386796e4c210aa",
+        9020: "fa6a1ca4e1127db7",
+        9090: "a7f408b471bde1ee",
+        9211: "d340ff8bacf8522d",
+        9276: "be422c21fb3d4da9",
+        9358: "6ad2dcc2b3537864",
+        9607: "aa009cb23d283bd6",
+        9611: "3df9d88560e95cba",
+        9754: "a332ed5018b6e279",
+        9905: "db6be9b6f221a982",
+        9924: "a3341503ebb3d06d",
+        9936: "e2359f368d04cda1"
+    }[e] + ".css",
+    r.g = function() {
+        if ("object" == typeof globalThis)
+            return globalThis;
+        try {
+            return this || new Function("return this")()
+        } catch (e) {
+            if ("object" == typeof window)
+                return window
+        }
+    }(),
+    r.hmd = e=>((e = Object.create(e)).children || (e.children = []),
+    Object.defineProperty(e, "exports", {
+        enumerable: !0,
+        set: ()=>{
+            throw new Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: " + e.id)
+        }
+    }),
+    e),
+    r.o = (e,a)=>Object.prototype.hasOwnProperty.call(e, a),
+    c = {},
+    d = "shopee-pc:",
+    r.l = (e,a,b,f)=>{
+        if (c[e])
+            c[e].push(a);
+        else {
+            var o, t;
+            if (void 0 !== b)
+                for (var i = document.getElementsByTagName("script"), n = 0; n < i.length; n++) {
+                    var s = i[n];
+                    if (s.getAttribute("src") == e || s.getAttribute("data-webpack") == d + b) {
+                        o = s;
+                        break
+                    }
+                }
+            o || (t = !0,
+            (o = document.createElement("script")).charset = "utf-8",
+            o.timeout = 120,
+            r.nc && o.setAttribute("nonce", r.nc),
+            o.setAttribute("data-webpack", d + b),
+            o.src = e),
+            c[e] = [a];
+            var l = (a,d)=>{
+                o.onerror = o.onload = null,
+                clearTimeout(p);
+                var b = c[e];
+                if (delete c[e],
+                o.parentNode && o.parentNode.removeChild(o),
+                b && b.forEach((e=>e(d))),
+                a)
+                    return a(d)
+            }
+              , p = setTimeout(l.bind(null, void 0, {
+                type: "timeout",
+                target: o
+            }), 12e4);
+            o.onerror = l.bind(null, o.onerror),
+            o.onload = l.bind(null, o.onload),
+            t && document.head.appendChild(o)
+        }
+    }
+    ,
+    r.r = e=>{
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+            value: "Module"
+        }),
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        })
+    }
+    ,
+    r.nmd = e=>(e.paths = [],
+    e.children || (e.children = []),
+    e),
+    r.p = "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/",
+    r.f.microfeF = (e,a)=>{
+        var c = {
+            6176: [4]
+        }[e];
+        c && c.forEach((e=>{
+            a.push(r.microfeM(e))
+        }
+        ))
+    }
+    ,
+    b = e=>new Promise(((a,c)=>{
+        var d = r.miniCssF(e)
+          , b = r.p + d;
+        if (((e,a)=>{
+            for (var c = document.getElementsByTagName("link"), d = 0; d < c.length; d++) {
+                var b = (o = c[d]).getAttribute("data-href") || o.getAttribute("href");
+                if ("stylesheet" === o.rel && (b === e || b === a))
+                    return o
+            }
+            var f = document.getElementsByTagName("style");
+            for (d = 0; d < f.length; d++) {
+                var o;
+                if ((b = (o = f[d]).getAttribute("data-href")) === e || b === a)
+                    return o
+            }
+        }
+        )(d, b))
+            return a();
+        ((e,a,c,d)=>{
+            var b = document.createElement("link");
+            b.rel = "stylesheet",
+            b.type = "text/css",
+            b.onerror = b.onload = f=>{
+                if (b.onerror = b.onload = null,
+                "load" === f.type)
+                    c();
+                else {
+                    var o = f && ("load" === f.type ? "missing" : f.type)
+                      , t = f && f.target && f.target.href || a
+                      , r = new Error("Loading CSS chunk " + e + " failed.\n(" + t + ")");
+                    r.code = "CSS_CHUNK_LOAD_FAILED",
+                    r.type = o,
+                    r.request = t,
+                    b.parentNode.removeChild(b),
+                    d(r)
+                }
+            }
+            ,
+            b.href = a,
+            document.head.appendChild(b)
+        }
+        )(e, b, a, c)
+    }
+    )),
+    f = {
+        6658: 0
+    },
+    r.f.miniCss = (e,a)=>{
+        f[e] ? a.push(f[e]) : 0 !== f[e] && {
+            215: 1,
+            293: 1,
+            369: 1,
+            561: 1,
+            566: 1,
+            569: 1,
+            601: 1,
+            642: 1,
+            684: 1,
+            773: 1,
+            919: 1,
+            975: 1,
+            986: 1,
+            1028: 1,
+            1036: 1,
+            1086: 1,
+            1110: 1,
+            1136: 1,
+            1179: 1,
+            1200: 1,
+            1235: 1,
+            1242: 1,
+            1303: 1,
+            1337: 1,
+            1466: 1,
+            1473: 1,
+            1531: 1,
+            1584: 1,
+            1714: 1,
+            1951: 1,
+            1968: 1,
+            1981: 1,
+            2009: 1,
+            2063: 1,
+            2142: 1,
+            2161: 1,
+            2279: 1,
+            2412: 1,
+            2552: 1,
+            2629: 1,
+            2718: 1,
+            2793: 1,
+            2845: 1,
+            2968: 1,
+            3046: 1,
+            3121: 1,
+            3187: 1,
+            3269: 1,
+            3283: 1,
+            3445: 1,
+            3507: 1,
+            3543: 1,
+            3573: 1,
+            3621: 1,
+            3665: 1,
+            3707: 1,
+            3754: 1,
+            3758: 1,
+            3785: 1,
+            3976: 1,
+            4006: 1,
+            4075: 1,
+            4106: 1,
+            4166: 1,
+            4200: 1,
+            4255: 1,
+            4325: 1,
+            4343: 1,
+            4344: 1,
+            4376: 1,
+            4464: 1,
+            4518: 1,
+            4557: 1,
+            4571: 1,
+            4615: 1,
+            4643: 1,
+            4794: 1,
+            4864: 1,
+            5174: 1,
+            5189: 1,
+            5264: 1,
+            5281: 1,
+            5322: 1,
+            5345: 1,
+            5375: 1,
+            5461: 1,
+            5479: 1,
+            5483: 1,
+            5500: 1,
+            5823: 1,
+            5833: 1,
+            5858: 1,
+            5959: 1,
+            5972: 1,
+            6061: 1,
+            6081: 1,
+            6109: 1,
+            6184: 1,
+            6201: 1,
+            6207: 1,
+            6222: 1,
+            6326: 1,
+            6368: 1,
+            6485: 1,
+            6539: 1,
+            6547: 1,
+            6743: 1,
+            6776: 1,
+            6791: 1,
+            6862: 1,
+            6922: 1,
+            6929: 1,
+            6931: 1,
+            6980: 1,
+            6983: 1,
+            7026: 1,
+            7116: 1,
+            7171: 1,
+            7412: 1,
+            7464: 1,
+            7537: 1,
+            7598: 1,
+            7599: 1,
+            7776: 1,
+            7793: 1,
+            7839: 1,
+            7905: 1,
+            7917: 1,
+            7978: 1,
+            8009: 1,
+            8026: 1,
+            8187: 1,
+            8204: 1,
+            8257: 1,
+            8341: 1,
+            8534: 1,
+            8616: 1,
+            8623: 1,
+            8637: 1,
+            8681: 1,
+            8696: 1,
+            8713: 1,
+            8729: 1,
+            8731: 1,
+            8798: 1,
+            8850: 1,
+            8912: 1,
+            8958: 1,
+            8970: 1,
+            9020: 1,
+            9090: 1,
+            9211: 1,
+            9276: 1,
+            9358: 1,
+            9607: 1,
+            9611: 1,
+            9754: 1,
+            9905: 1,
+            9924: 1,
+            9936: 1
+        }[e] && a.push(f[e] = b(e).then((()=>{
+            f[e] = 0
+        }
+        ), (a=>{
+            throw delete f[e],
+            a
+        }
+        )))
+    }
+    ,
+    (()=>{
+        var e = {
+            6658: 0
+        }
+          , a = [];
+        r.f.j = (a,c)=>{
+            var d = r.o(e, a) ? e[a] : void 0;
+            if (0 !== d)
+                if (d)
+                    c.push(d[2]);
+                else if (/^5(264|858)$/.test(a))
+                    e[a] = 0;
+                else {
+                    var b = new Promise(((c,b)=>{
+                        d = e[a] = [c, b]
+                    }
+                    ));
+                    c.push(d[2] = b);
+                    var f = r.p + r.u(a)
+                      , o = new Error;
+                    r.l(f, (c=>{
+                        if (r.o(e, a) && (0 !== (d = e[a]) && (e[a] = void 0),
+                        d)) {
+                            var b = c && ("load" === c.type ? "missing" : c.type)
+                              , f = c && c.target && c.target.src;
+                            o.message = "Loading chunk " + a + " failed.\n(" + b + ": " + f + ")",
+                            o.name = "ChunkLoadError",
+                            o.type = b,
+                            o.request = f,
+                            d[1](o)
+                        }
+                    }
+                    ), "chunk-" + a, a)
+                }
+        }
+        ;
+        var c = e=>{}
+          , d = (d,b)=>{
+            for (var f, o, [t,i,n,s] = b, l = 0, p = []; l < t.length; l++)
+                o = t[l],
+                r.o(e, o) && e[o] && p.push(e[o][0]),
+                e[o] = 0;
+            for (f in i)
+                r.o(i, f) && (r.m[f] = i[f]);
+            for (n && n(r),
+            d && d(b); p.length; )
+                p.shift()();
+            return s && a.push.apply(a, s),
+            c()
+        }
+          , b = ("undefined" != typeof self ? self : this).webpackChunkshopee_pc = ("undefined" != typeof self ? self : this).webpackChunkshopee_pc || [];
+        function f() {
+            for (var c, d = 0; d < a.length; d++) {
+                for (var b = a[d], f = !0, o = 1; o < b.length; o++) {
+                    var t = b[o];
+                    0 !== e[t] && (f = !1)
+                }
+                f && (a.splice(d--, 1),
+                c = r(r.s = b[0]))
+            }
+            return 0 === a.length && (r.x(),
+            r.x = e=>{}
+            ),
+            c
+        }
+        b.forEach(d.bind(null, 0)),
+        b.push = d.bind(null, b.push.bind(b));
+        var o = r.x;
+        r.x = ()=>(r.x = o || (e=>{}
+        ),
+        (c = f)())
+    }
+    )(),
+    r.x()
+	simon = r
+}
+)();
+//# sourceMappingURL=https://sourcemap.webfe.shopeemobile.com/pcmall-static/_/webpack-runtime.13cf6e7d16d24a83.js.map

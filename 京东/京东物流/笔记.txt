@@ -1,0 +1,37 @@
+
+
+Ciphertext
+KhFKai77IHDbqdIASH48+IztKjU8qJGuXUcVClMyEP/yV1cE98wU0TAod7VrczgWZ5shxDEBvQHcBG1JEDOW2sXv1yBdUA+9P2fN2GcHtvLp3dM1N7KZuS1cX5BTgno3yGu9b0L8HOUU7f8DVVIAk7d1MjO49m0TxqGsrWWjPdo=
+
+表单
+m0EKZa5sjcYRYDcSDevPtaDhisx4eZHUrKfFi3UNz6mKPUuP9BREBd4ImsIflMcT5ShyQviYTNhLjJmDz2CvTp9j7Vje1t3KKUVafhooHCmHK
+
+
+
+Ciphertext
+EvfDr7ZgrB4vNZ9TEi/cmnFyzoyCGF+tHCpzyKGcWGOkcTxbVL3g4CJVhO2bYn07ktzh+jcJKE3FSE5kb/cDBuilhW60OOcMFzSYdqjWxHOavZXSk55/OxASx7dKcp2eB5So3eHbxfE+V1AJ25QKIitN2gOOnbWcQSBTko1OLx8=
+
+表单
+4G15NBJhVDMpCzOQrK8hAiGl4hR52DB9AhvBA4B0Q8z5//kQY3Qd9 Q8IAdHoU
+
+总结：表单 + 头部的Ciphertext  是变化的参数  也就是说如果想实现功能 需要进行逆向分析
+
+
+单子价格： 先分析？  参数有哪些 同步还是异步  是否涉及安全产品
+
+
+异步调试   下xhr --》无脑
+
+getAgingFee: function(data) {
+            return e.post("/aging/feeInquiryNewByJDL", data)
+        },
+
+分清楚流程  明文--》 密文是怎么转的  加密的圈子在什么位置？
+
+2、分析方式
+    关键字  或者 hook json.stringify
+
+
+2套算法
+1、RSA
+2、AES
