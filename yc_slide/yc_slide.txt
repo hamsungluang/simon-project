@@ -1,0 +1,2 @@
+网址：aHR0cHM6Ly9hcHAueWljaHVhcHAuY24vaW5kZXgvaW52aXRlL2luZGV4Lz9mcm9tPTExMDgyOA==
+该站的滑块验证码，逻辑清晰，适合入门练手，主要是 y 轴校验较为严格，需要对比处理，目前成功率尚可
